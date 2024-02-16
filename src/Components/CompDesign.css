@@ -1,17 +1,39 @@
-.search-container{
+.search-container {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-input{
+input {
     border: 1px solid blue;
     width: 30%;
     height: 5vh;
-    border-radius:1vw;
+    border-radius: 1vw;
 }
 
-button{
+button {
     border: none;
     background: none;
 }
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    grid-auto-rows: minmax(100px, auto);
+    /* Automatic row height */
+    grid-gap: 10px;
+    /* Gap between grid items */
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img{
+   max-width: 100%; 
+   height: auto;
+}
+

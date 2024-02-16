@@ -28,6 +28,7 @@ const Search = () => {
 
     const handleInput = (event) => {
         setInputData(event.target.value);
+        setEmptyText(event.target.value);
     }
     const handleSearch = (event) => {
         console.log('inputData...', inputData);

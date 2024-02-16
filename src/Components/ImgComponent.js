@@ -19,7 +19,7 @@ const ImgComponent = ({ data }) => {
     // }
 
     return (
-        <div>
+        <div className='image-container'>
             {
                 data?.map((image) => {
                     let farm = image.farm;
@@ -28,7 +28,11 @@ const ImgComponent = ({ data }) => {
                     let secret = image.secret;
                     let title = image.title;
                     let url = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_m.jpg`;
-                    return <img src={url} alt='images' />
+                    return (
+                        <div className='grid-item'>
+                            <img src={url} alt='images' />
+                        </div>
+                    )
                 })
             }
         </div>
