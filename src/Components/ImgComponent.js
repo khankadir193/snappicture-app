@@ -2,25 +2,24 @@ import React, { useEffect, useState } from 'react';
 import ApiCall from './ApiCall';
 
 
-const ImgComponent = () => {
-    const [data, setData] = useState();
+const ImgComponent = ({ data }) => {
+    // const [data, setData] = useState();
 
-    useEffect(() => {
-        // const result = await ApiCall();
-        // setData(result);
-        // console.log('result...??', result);
-        resultFunction();
-    }, [0]);
+    // useEffect(() => {
+    //     // const result = await ApiCall();
+    //     // setData(result);
+    //     // console.log('result...??', result);
+    //     resultFunction();
+    // }, [0]);
 
-    const resultFunction = async () => {
-        const result = await ApiCall();
-        setData(result);
-        console.log('result...??', result);
-    }
+    // const resultFunction = async () => {
+    //     const result = await ApiCall();
+    //     setData(result);
+    //     console.log('result...??', result);
+    // }
 
     return (
         <div>
-            <h1>Hi this is the img components...</h1>
             {
                 data?.map((image) => {
                     let farm = image.farm;
