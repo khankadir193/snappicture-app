@@ -30,7 +30,7 @@ const ImgComponent = ({ data }) => {
                     let url = `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_m.jpg`;
                     return (
                         <div className='grid-item'>
-                            <img src={url} alt='images' />
+                            <img src={url} alt='images' className='zoom-image' />
                         </div>
                     )
                 })

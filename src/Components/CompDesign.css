@@ -24,6 +24,11 @@ button {
     /* Automatic row height */
     grid-gap: 10px;
     /* Gap between grid items */
+    background-color: antiquewhite;
+    padding: 3vw;
+    border-radius: 6vw;
+    border: 2px solid rgb(9, 102, 41);
+    margin-top: 1vw;
 }
 
 .grid-item{
@@ -35,5 +40,13 @@ button {
 .grid-item img{
    max-width: 100%; 
    height: auto;
+}
+
+.zoom-image{
+    transition: transform 1s;
+}
+
+.zoom-image:hover{
+    transform: scale(1.5);
 }
 
